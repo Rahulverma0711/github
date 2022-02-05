@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        *{
+            background-color: black;
+        }
+       p{
+           color:rgb(18, 182, 40);
+       }
+        .textpink{
+            color:rgb(211, 15, 146);
+        }
+        .largetext{
+            font-size: 30px;
+        }
+        .textpink.largetext{
+            color:black;
+        }
+        #unique{
+            color:rgb(212, 226, 19);
+            font-size: 40px;
+        }
+        h4,h3,a{
+            color:rgb(17, 226, 226)
+        }
+        /* decendant selector */
+        div p span{
+            color:blanchedalmond;
+        }
+        /* children selector */
+        div>p>span{
+            color:gold;
+        }
+        a[href="https://nados.io"]{
+            color:pink;
+
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tempora facilis quos quis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, veritatis.</p>
+    <div>
+        <h1>First Heading</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consectetur nihil animi repudiandae?
+        </p>
+    </div>
+
+
+    <!-- class Selector -->
+    <h1>Class Selector</h1>
+    <p class ="textpink largetext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, sequi?</p>
+    <p class ="textpink">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, asperiores?</p>
+    <p class=largetext>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquid.</p>
+
+    <!-- id Selector -->
+    <h1>ID Selector</h1>
+    <p class ="colorselect" id ="unique">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi.</p>
+
+    <!-- universal selector denoted by * -->
+
+
+    <!-- grouping Selector -->
+    <h3>I am h1</h1>
+    <a href="http://nodos.io" target="_blank">NADOS</a>
+    <h4>I am h3</h3>
+
+
+    <div>
+        <p>
+            <span>I am a child</span>
+        </p>
+    </div>    
+
+    <div>
+        <span>
+            <p>
+                <span>I am a descendant</span>
+            </p>
+        </span>   
+    </div>
+             <!-- Attribute selector -->
+    <a href="https://nados.io" target="_blank">NADOS</a>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.netflix.com" target="_blank">Netflix</a>
+   
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- linking of a external css -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        p{
+            color:rgb(219, 39, 7);
+        }
+        h1{
+            color:red;
+            font-size: 50px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border:2px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Pepcoding</h1>
+    <h2>Welcome to Pepcoding</h2>
+    <h3>Welcome to Pepcoding</h3>
+    <h4>Welcome to Pepcoding</h4>
+    <h5>Welcome to Pepcoding</h5>
+    <h6>Welcome to Pepcoding</h6>
+    
+    <!-- Paragraph Tag -->
+    <!-- inline css styling -->
+    <p style="color:hotpink;font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus laboriosam,
+    quaerat nisi nemo odio recusandae dignissimos maxime provident at rem molestias quo
+     pariatur quidem veniam eligendi voluptas, sunt ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus laboriosam,
+    quaerat nisi nemo odio recusandae dignissimos maxime provident at rem molestias quo
+     pariatur quidem veniam eligendi voluptas, sunt ea?</p>      
+    
+
+     <!-- Div Tag -->
+       <!-- It is a kind of bucket/container. -->
+    <div>
+        <h1>div1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, necessitatibus.</p>
+    </div>
+    <div>
+        <h1>div2</h1>
+        <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, maxime.</p1>
+    </div>   
+
+     <!-- List Tag -->
+       <!-- Unordered List -->
+       <h3>Grocery Shopping List</h3>
+       <ul>
+           <li>Onion</li>
+           <li>tomatoes</li>
+           <li>cheese</li>
+       </ul>
+
+       <!-- Ordered List -->
+    <h3>Grocery List 2.0</h3>   
+    <ol>
+        <li>Oil</li>
+        <li>Cabbage</li>
+        <li>Chips</li>
+    </ol>
+
+
+    <!-- Span Tag -->
+    <p>In order to make this course <span style ="color:green">success</span> we need to have <span style="color :red">faith</span> in each other</p>
+     
+    <!-- Anchor Tag -->
+     <!-- It can used to redirect to your own webpages -->
+    <div>
+        <a href ="abc.html" target="_blank">next page</a>
+    </div>
+    <div>
+        <a href ="https://www.google.com/" target="_blank">google</a>
+    </div>
+
+    <!-- Image tag -->
+     <!-- is used to attach a image in the webpage -->
+     <!-- It is a self closing tag -->
+     <img src="logo2.png" alt="pepcoding logo">
+    
+
+     <!-- Creating a table -->
+
+     <table>
+         <thead>
+             <tr>
+                 <th>Name</th>
+                 <th>Roll</th>
+                 <th>Stream</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td>Rahul</td>
+                 <td>193035</td>
+                 <td>ECE</td>
+             </tr>
+             <tr>
+                <td>Rishav</td>
+                <td>193036</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <td>Rohan</td>
+                <td>193037</td>
+                <td>CSE</td>
+            </tr>
+         </tbody>
+     </table>
+
+
+     <table>
+         <caption>College Table</caption>
+     <tr>
+         <th>Name</th>
+         <th>Roll</th>
+         <th>Branch</th>
+         <th>Percentage</th>
+     </tr>
+     <tr>
+         <td>Rahul</td>
+         <td>25</td>
+         <td>Cse</td>
+         <td>75</td>
+     </tr>
+     <tr>
+        <td>Rohan</td>
+        <td>26</td>
+        <td>Cse</td>
+        <td>76</td>
+    </tr>
+    <tr>
+        <td>Rishav</td>
+        <td>27</td>
+        <td>Cse</td>
+        <td>77</td>
+    </tr>
+     </table>
+
+
+    <table border="7">
+        <caption>TIME TABLE</caption>
+     <thead>
+      <tr>
+        <th></th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+      </tr>
+    </thead>
+   <tbody>
+    <tr>
+        <th>Mon</th>
+        <td>Maths</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Hindi</td>
+    </tr>
+    <tr>
+        <th>Tue</th>
+        <td>English</td>
+        <td>Maths</td>
+        <td>Hindi</td>
+        <td>Science</td>
+    </tr>
+    <tr>
+        <th>Wed</th>
+        <td>Maths</td>
+        <td>Hindi</td>
+        <td>Science</td>
+        <td>English</td>
+    </tr>
+</tbody>
+    </table>
+
+    <!-- strong tag--bold , em tag--italic -->
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus dolorem nemo nisi aliquam <strong>aliquam</strong> ratione repellendus nostrum!</p>
+    
+     <!-- understanding rowspan and colspan -->
+     <table border="2">
+         <tr>
+             <th colspan="2">Animals</th>
+             <!-- <th>Animals</th> -->
+         </tr>
+         <tr>
+             <th colspan="2">hipopotamus</th>
+         </tr>
+         <tr>
+             <th rowspan="2">horse</th>
+             <td>max</td>
+         </tr>
+         <tr>
+            <!-- <td>horse</td> -->
+            <td>Stallin</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Chicken</th>
+            <td>hen</td>
+        </tr>
+        <tr>
+            <!-- <th>Chicken</th> -->
+            <td>Rooster</td>
+        </tr>
+        <tr>
+            <th colspan="2">crocodile</th>
+            <!-- <th>crocodile</th> -->
+        </tr>
+     </table>
+     
+
+
+
+</body>
+</html>
