@@ -25,7 +25,7 @@ console.log(CaptainAmerica.lastname);
 CaptainAmerica.sayHi();
 
 //for loop 
-// in keyword in JS i sused to get the keys from the object
+// in keyword in JS is used to get the keys from the object
 
 for(let i in CaptainAmerica){
     console.log(i);
