@@ -30,5 +30,5 @@ CaptainAmerica.sayHi();
 for(let i in CaptainAmerica){
     console.log(i);
     console.log(CaptainAmerica[i]);//dont use dot notataion in this
-
+   
 }
