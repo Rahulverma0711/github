@@ -16,8 +16,3 @@ console.log(a);
 //typeof operator ->it tells us the type of data stored in a variable
 console.log(typeof(a));
 
-
- var num=100;
- console.log(`half of ${num} is ${num/2}`);
-
-console.log("rahul")
