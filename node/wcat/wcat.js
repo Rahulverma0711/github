@@ -5,7 +5,7 @@ let inputArr = process.argv.slice(2);
 
 let filesArr = [];
 let optionArr=[];
-// placed files path in filesArr
+
 for (let i = 0; i < inputArr.length; i++){
     let firstChar=inputArr[i].charAt(0);
     if(firstChar=='-'){
@@ -16,9 +16,7 @@ for (let i = 0; i < inputArr.length; i++){
 
     
 }
-// console.log("file to be read are " + filesArr);
 
-//check if all the files are present //
 for (let i = 0; i < filesArr.length; i++){
     let doesExist = fs.existsSync(filesArr[i]);
     if (!doesExist) {
@@ -27,7 +25,7 @@ for (let i = 0; i < filesArr.length; i++){
     }
 }
 
-// content read and appending starts//
+
 let content = "";
 for (let i = 0; i < filesArr.length; i++){
     let fileContent = fs.readFileSync(filesArr[i]);
@@ -50,11 +48,57 @@ if(isPresent){
 
     }
 }
-// console.log(contentArr);
+
  tempArr=[];
  for(let i=0;i<contentArr.length;i++){
      if(contentArr[i]!=null){
          tempArr.push(contentArr[i]);
      }
  }
-console.log(tempArr);
+contentArr=tempArr;
+let indexOfN = optionsArr.indexOf("-n");
+let indexOfB = optionsArr.indexOf("-b");
+
+
+let finalOption = "";
+
+if (indexOfN != -1 && indexOfB != -1) {
+    if (indexOfN < indexOfB) {
+        finalOption = "-n";
+    }
+    else {
+        finalOption = "-b";
+    }
+}
+
+else {
+    if (indexOfN != -1) {
+        finalOption = "-n";
+    }
+    else if (indexOfB != -1) {
+        finalOption="-b"
+    }
+}
+
+
+if (finalOption == "-n") {
+    modifiyContentByN();
+}
+else if (finalOption == "-b") {
+    modifiyContentByB();
+}
+
+function modifiyContentByN() {
+   for(let i=0;i<contentArr.length;i++){
+       content[i]=(i+1)+") "+content[i];
+   }
+}
+ console.log(contentArr);
+function modifiyContentByB() {
+   for(let i=0;i<contentArr.length;i++){
+       if(content[i]!=""){
+        content[i]=(i+1)+") "+content[i];
+       }
+   }
+}
+console.log(contentArr);
